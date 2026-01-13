@@ -23,16 +23,12 @@ import java.util.List;
 /**
  * Modern three-panel settings screen for Titan Performance.
  *
- * Layout:
- * +-----------------------------------------------------------+
- * |                    TITAN PERFORMANCE                       |
- * |  Hardware: HIGH | 6/8 optimizations active | v1.0.0       |
- * +------------+--------------------------------+--------------+
- * | SIDEBAR    |     OPTIONS PANEL              | DESCRIPTION  |
- * | Categories |     Module toggles             | Panel        |
- * +------------+--------------------------------+--------------+
- * |                   [Apply]  [Reset]  [Done]                |
- * +-----------------------------------------------------------+
+ * The screen is divided into three main sections:
+ * Left panel contains category navigation buttons.
+ * Center panel displays module toggles and sliders for the selected category.
+ * Right panel shows descriptions when hovering over options.
+ * Header displays title, status, and hardware tier.
+ * Footer contains Apply, Reset, and Done buttons.
  */
 @Environment(EnvType.CLIENT)
 public class TitanSettingsScreen extends Screen {

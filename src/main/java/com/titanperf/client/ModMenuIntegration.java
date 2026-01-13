@@ -12,9 +12,8 @@ import net.fabricmc.api.Environment;
  * Provides a configuration screen factory that ModMenu uses to show
  * the Titan Performance settings button in the mod list.
  *
- * This allows users to access the settings through both:
- * 1. Video Settings -> Titan Performance button
- * 2. Mods menu -> Titan Performance -> Configure
+ * Users can access settings through the Video Settings menu
+ * or through the Mods menu by selecting Titan Performance and clicking Configure.
  */
 @Environment(EnvType.CLIENT)
 public class ModMenuIntegration implements ModMenuApi {
