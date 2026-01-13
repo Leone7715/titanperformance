@@ -1,0 +1,44 @@
+# Claude Code
+.claude/
+
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft
+run/
+logs/
+
+# Loom
+remappedSrc/
+.fabric/
+
+# Build outputs
+*.log
+*.jar
+multi-version-builds/
+
+# Local config
+local.properties
+
+# Temporary files
+*.tmp
+*~
+
+# JDK download (local)
+/jdk-*/
+/openjdk*.tar.gz
+build-all*.sh

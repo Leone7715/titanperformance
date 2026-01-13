@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "titanperf",
+  "version": "${version}",
+  "name": "Titan Performance",
+  "description": "All-in-one Minecraft performance optimization mod. Combines rendering optimization, entity culling, lighting engine improvements, memory reduction, and dynamic FPS control into a single unified system with automatic hardware detection and configuration. Developed by LeoneDev at LeonesModFactory.",
+  "authors": [
+    "LeoneDev",
+    "LeonesModFactory"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/titan-performance",
+    "sources": "https://github.com/Leone7715/titanperformance",
+    "issues": "https://github.com/Leone7715/titanperformance/issues"
+  },
+  "license": "LGPL-3.0-only",
+  "icon": "assets/titanperf/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.titanperf.TitanPerformanceMod"
+    ],
+    "client": [
+      "com.titanperf.TitanPerformanceClient"
+    ],
+    "modmenu": [
+      "com.titanperf.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "titanperf.mixins.json",
+    {
+      "config": "titanperf.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "accessWidener": "titanperf.accesswidener",
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+  },
+  "breaks": {
+    "lithium": "*",
+    "starlight": "*",
+    "entityculling": "*",
+    "ferritecore": "*",
+    "dynamic-fps": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/eFKaKdkCAw",
+        "modmenu.wiki": "https://github.com/Leone7715/titanperformance/wiki"
+      },
+      "update_checker": true
+    },
+    "titanperf": {
+      "iris_compat": true,
+      "sodium_soft_compat": true
+    }
+  }
+}
